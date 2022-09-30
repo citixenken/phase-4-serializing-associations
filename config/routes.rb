@@ -4,5 +4,4 @@ Rails.application.routes.draw do
   get '/movie_summaries', to: 'movies#summaries'
   resources :directors, only: [:index, :show]
   resources :reviews, only: [:index]
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
